@@ -3,7 +3,7 @@ pyyaml>=3.12
 matplotlib==2.1.0
 opencv-python>=3.2
 setuptools
-Cython
+#Cython
 #mock
 #scipy==0.19.1
 #h5py
