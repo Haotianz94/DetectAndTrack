@@ -10,4 +10,4 @@ h5py
 memory_profiler
 tqdm
 shapely
-pandas
+#pandas
