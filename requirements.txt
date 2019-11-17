@@ -6,8 +6,8 @@ setuptools
 Cython
 mock
 #scipy==0.19.1
-h5py
-memory_profiler
-tqdm
-shapely
-pandas
+#h5py
+#memory_profiler
+#tqdm
+#shapely
+#pandas
