@@ -14,6 +14,9 @@ RUN git clone https://github.com/Haotianz94/DetectAndTrack.git /detectandtrack
 
 RUN apt-get install -y libeigen3-dev python-tk
 
+# Hacky for Eigen
+RUN mv /usr/include/eigen3/Eigen/ /usr/include/Eigen/
+
 # Install Python dependencies
 RUN cd /detectandtrack \
         && pip install -r requirements.txt
@@ -28,9 +31,6 @@ WORKDIR /detectandtrack/lib
 
 # Set up Python modules
 RUN make
-
-# Hacky for Eigen
-RUN mv /usr/include/eigen3/Eigen/ /usr/include/Eigen/
 
 # [Optional] Build custom ops
 RUN make ops

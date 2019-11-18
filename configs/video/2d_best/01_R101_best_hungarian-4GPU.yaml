@@ -53,6 +53,7 @@ TRAIN:
   IMS_PER_BATCH: 1
 TEST:
   # DATASET: keypoints_coco_2014_minival
+  WEIGHTS: pretrained_models/configs/video/2d_best/01_R101_best_hungarian-4GPU.yaml/model_final.pkl
   DATASET: posetrack_v1.0_val
   SCALES: (800,)
   MAX_SIZE: 1333
