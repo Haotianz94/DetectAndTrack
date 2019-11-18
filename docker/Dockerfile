@@ -29,6 +29,9 @@ WORKDIR /detectandtrack/lib
 # Set up Python modules
 RUN make
 
+# Hacky for Eigen
+RUN ln -s /usr/include/Eigen/ /usr/include/eigen3/Eigen/
+
 # [Optional] Build custom ops
 RUN make ops
 
