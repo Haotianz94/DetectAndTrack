@@ -30,7 +30,7 @@ WORKDIR /detectandtrack/lib
 RUN make
 
 # Hacky for Eigen
-RUN ln -s /usr/include/Eigen/ /usr/include/eigen3/Eigen/
+RUN ln -s /usr/include/eigen3/Eigen/ /usr/include/Eigen/
 
 # [Optional] Build custom ops
 RUN make ops
