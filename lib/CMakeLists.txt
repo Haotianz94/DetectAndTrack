@@ -25,8 +25,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O2 -fPIC -Wno-narrowing")
 include(cmake/Summary.cmake)
 detectron_print_config_summary()
 
-message(WARNING "++++++++++++++++++++CMAKE_CURRENT_SOURCE_DIR")
-
 # Collect custom ops sources.
 file(GLOB CUSTOM_OPS_CPU_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/ops/*.cc)
 file(GLOB CUSTOM_OPS_GPU_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/ops/*.cu)

@@ -10,7 +10,7 @@ ENV LD_LIBRARY_PATH /usr/local/caffe2_build/lib:${LD_LIBRARY_PATH}
 RUN apt-get -y update
 
 # Clone the Detectron repository
-RUN git clone https://github.com/facebookresearch/DetectAndTrack.git /detectandtrack
+RUN git clone https://github.com/Haotianz94/DetectAndTrack.git /detectandtrack
 
 RUN apt-get install -y libeigen3-dev python-tk
 
